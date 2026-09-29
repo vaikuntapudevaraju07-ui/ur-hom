@@ -1,0 +1,514 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Playfair+Display:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#131410;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-dim": "#131410", "on-primary-container": "#4e3700", "on-primary-fixed": "#261900", "surface": "#131410", "surface-container": "#1f201c", "on-tertiary": "#3c2f00", "primary-fixed-dim": "#e9c176", "surface-bright": "#393936", "tertiary-fixed": "#ffe088", "tertiary-fixed-dim": "#e9c349", "inverse-on-surface": "#30312d", "on-error": "#690005", "secondary-container": "#4a4949", "surface-container-high": "#2a2a27", "on-tertiary-fixed": "#241a00", "secondary-fixed": "#e5e2e1", "inverse-primary": "#775a19", "outline": "#9a8f80", "on-error-container": "#ffdad6", "primary-fixed": "#ffdea5", "error": "#ffb4ab", "surface-container-highest": "#353531", "surface-container-low": "#1b1c18", "surface-tint": "#e9c176", "background": "#131410", "on-surface": "#e4e2dd", "on-tertiary-fixed-variant": "#574500", "inverse-surface": "#e4e2dd", "on-surface-variant": "#d1c5b4", "tertiary": "#e9c349", "primary-container": "#c5a059", "on-secondary-fixed-variant": "#474646", "secondary-fixed-dim": "#c8c6c5", "on-secondary": "#313030", "on-primary": "#412d00", "error-container": "#93000a", "surface-variant": "#353531", "outline-variant": "#4e4639", "surface-container-lowest": "#0e0f0b", "on-background": "#e4e2dd", "primary": "#e9c176", "on-secondary-fixed": "#1c1b1b", "on-primary-fixed-variant": "#5d4201", "on-tertiary-container": "#493900", "secondary": "#c8c6c5", "on-secondary-container": "#bab8b7", "tertiary-container": "#c5a129" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-lg": "2.5rem", "space-lg": "2rem", "space-xs": "0.375rem", "margin": "1.25rem", "space-xl": "3.5rem", "margin-md": "3rem", "gutter": "1.5rem", "space-sm": "0.75rem", "space-md": "1.25rem", "margin-lg": "5rem" }, "fontFamily": { "label-sm": ["Montserrat"], "title-lg": ["Montserrat"], "display": ["Playfair Display"], "display-mobile": ["Playfair Display"], "headline-sm": ["Playfair Display"], "body-md": ["Montserrat"], "body-lg": ["Montserrat"], "headline-md": ["Playfair Display"], "headline-lg": ["Playfair Display"], "title-md": ["Montserrat"], "headline-lg-mobile": ["Playfair Display"], "label-lg": ["Montserrat"] }, "fontSize": { "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.18em", "fontWeight": "600" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "0.05em", "fontWeight": "600" }], "display": ["56px", { "lineHeight": "68px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "display-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "300" }], "body-lg": ["16px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "300" }], "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0.04em", "fontWeight": "500" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "500" }], "label-lg": ["13px", { "lineHeight": "18px", "letterSpacing": "0.12em", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface text-on-surface font-body-md antialiased min-h-screen flex flex-col selection:bg-primary selection:text-on-primary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 px-space-md flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm"><img alt="UR HOM Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XQ8ZC-1E9lgAcuht2KVSaFfaKFMGgb57dd24wZpb9YEDKgEwilHisAtuRUKVmG7hzXlr0A_8H-aiWDPhZym51fSth5AFxZ2x8hhpR-MKBk1qH4JWynfVpkldZ8W0vmfsPlc_awVMaT5V-i3-H7l7xOPg-yexmCWNVWq1mxzGqELQOFIU2CcJGUldxd2ZBDVW4UrAERMcoCjC9Th-3J2Z7OXRQtkD863et5vExH7xgSUW2SZhMRAQ3P2SM"/><div class="flex flex-col"><div class="flex items-baseline gap-space-xs"><span class="font-title-lg text-title-lg tracking-wider text-on-surface uppercase">UR HOM</span><span class="font-title-md text-title-md text-primary font-light">|</span><span class="font-title-md text-title-md text-primary tracking-wide font-headline-sm">About</span></div><span class="font-label-sm text-[9px] text-outline uppercase tracking-[0.2em]">Rajahmundry Architectural Luxury</span></div></div><div class="flex items-center gap-space-xs"><a aria-label="Call Concierge" class="w-11 h-11 flex items-center justify-center text-primary active:scale-95 transition-transform duration-200" href="tel:+918832400000"><span class="material-symbols-outlined text-[20px]">call</span></a><a aria-label="WhatsApp Consultation" class="w-11 h-11 flex items-center justify-center text-primary-fixed-dim active:scale-95 transition-transform duration-200" href="https://wa.me/918832400000"><span class="material-symbols-outlined text-[20px]">chat</span></a><button aria-label="Open Architectural Menu" class="w-11 h-11 flex items-center justify-center text-on-surface active:scale-95 transition-transform duration-200" onclick="document.getElementById('mobile-drawer').classList.remove('translate-x-full');document.getElementById('drawer-backdrop').classList.remove('opacity-0','pointer-events-none');"><span class="material-symbols-outlined text-[24px]">menu</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><div class="fixed inset-0 z-50 bg-black/75 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300" id="drawer-backdrop" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full');this.classList.add('opacity-0','pointer-events-none');"></div><aside class="fixed top-0 right-0 h-full w-[85vw] max-w-sm z-50 bg-surface-container-low/95 backdrop-blur-2xl transform translate-x-full transition-transform duration-300 ease-out flex flex-col justify-between pt-safe pb-safe shadow-[0_20px_40px_-15px_rgba(0,0,0,0.7)]" id="mobile-drawer"><div class="p-space-lg flex flex-col"><div class="flex items-center justify-between pb-space-md"><div class="flex flex-col"><span class="font-title-lg text-title-lg tracking-widest text-primary uppercase">UR HOM</span><span class="font-label-sm text-label-sm text-outline uppercase">Interiors & Exteriors</span></div><button aria-label="Close Menu" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary active:scale-95 transition-colors" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full');document.getElementById('drawer-backdrop').classList.add('opacity-0','pointer-events-none');"><span class="material-symbols-outlined text-[24px]">close</span></button></div><nav class="flex flex-col mt-space-md space-y-space-sm"><a class="flex items-center justify-between py-space-sm font-headline-sm text-headline-sm text-on-surface hover:text-primary tracking-wide transition-colors" data-path="home" href="index.html"><span class="uppercase font-display">Home</span><span class="font-label-sm text-label-sm text-outline">01</span></a><a class="flex items-center justify-between py-space-sm font-headline-sm text-headline-sm text-on-surface hover:text-primary tracking-wide transition-colors" data-path="about" href="about.html"><span class="uppercase font-display">About</span><span class="font-label-sm text-label-sm text-outline">02</span></a><a class="flex items-center justify-between py-space-sm font-headline-sm text-headline-sm text-on-surface hover:text-primary tracking-wide transition-colors" data-path="services" href="service.html"><span class="uppercase font-display">Services</span><span class="font-label-sm text-label-sm text-outline">03</span></a><a class="flex items-center justify-between py-space-sm font-headline-sm text-headline-sm text-on-surface hover:text-primary tracking-wide transition-colors" data-path="projects" href="project.html"><span class="uppercase font-display">Projects</span><span class="font-label-sm text-label-sm text-outline">04</span></a><a class="flex items-center justify-between py-space-sm font-headline-sm text-headline-sm text-on-surface hover:text-primary tracking-wide transition-colors" data-path="contact" href="contact.html"><span class="uppercase font-display">Contact</span><span class="font-label-sm text-label-sm text-outline">05</span></a></nav><div class="mt-space-lg pt-space-md"><span class="font-label-sm text-label-sm text-outline uppercase tracking-widest block mb-space-sm">Studio Rajahmundry</span><p class="font-body-md text-body-md text-on-surface-variant font-light leading-relaxed">Riverfront Promenade, Danavaipeta,<br/>Rajahmundry, AP 533103</p><a class="font-title-md text-title-md text-primary mt-space-xs block font-medium" href="tel:+918832400000">+91 883 240 0000</a></div></div><div class="p-space-lg flex flex-col gap-space-sm bg-surface-container-lowest/60"><a class="w-full h-12 bg-primary text-on-primary flex items-center justify-center font-label-lg text-label-lg uppercase tracking-widest active:bg-primary-fixed-dim transition-colors shadow-[0_0_20px_rgba(197,160,89,0.3)]" href="https://wa.me/918832400000"><span class="material-symbols-outlined text-[18px] mr-2">chat</span>Instant WhatsApp</a><span class="font-label-sm text-[10px] text-outline text-center uppercase tracking-widest">IIID â€¢ IGBC Certified Atelier</span></div></aside><main class="flex-1 flex flex-col relative w-full pt-20 bg-surface pb-28"><div class="flex flex-col w-full">
+<!-- Editorial Hero Section -->
+<section class="relative w-full overflow-hidden bg-surface-container-lowest">
+<div class="relative w-full h-[360px]">
+<div class="w-full h-full bg-cover bg-center" data-alt="Magnificent double-height luxury penthouse living room in Rajahmundry overlooking the Godavari river at dusk. Floor-to-ceiling panoramic glass facade, polished Italian Calacatta gold marble floors, warm teak slatted wood panelling, brass architectural staircase, ambient gold cove lighting, and bespoke emerald green velvet modular seating." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD7LyHuqY1eru_kkNpwCQuNLH7m6QM1s6PuJXX51789OUHZw8IkZMGlCLuN4fQ-SxlP2ghfSabi-AfTV9BWPsNTKuyyTRob23YSnyWHF5hwiGfX5EwjRHE1qk0auVvP0Co2euM-iXmQ0lCiLg-sRRfMit1P9Ra8DgKe3GW_Zrq1SjMASiaz30rkAab-1IHMqhZX86bVRdTeEKEfv5PcosLe9smlGh1fX-RCj6II32q8rb75AkKyeWCDCg')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-dim/80 via-transparent to-transparent"></div>
+<!-- Riverfront Heritage Badge -->
+<div class="absolute top-4 left-margin flex items-center gap-space-xs px-3 py-1.5 bg-surface-container/85 backdrop-blur-md rounded-DEFAULT shadow-md">
+<span class="material-symbols-outlined text-primary text-[15px]">water</span>
+<span class="font-label-sm text-[10px] text-primary tracking-[0.22em] uppercase">Godavari Riverfront Atelier</span>
+</div>
+<!-- Headline Block -->
+<div class="absolute bottom-6 left-margin right-margin flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.25em]">Atelier UR HOM</span>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-light tracking-tight leading-tight">
+          Defining <span class="italic font-display text-primary">Architectural Grandeur</span> & Timeless Spaces
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant font-light line-clamp-2 mt-1">
+          Bespoke high-living architecture and sensory interiors crafted in the historic heart of Rajahmundry.
+        </p>
+</div>
+</div>
+</section>
+<!-- Interactive Story & Stats Band -->
+<section class="w-full px-margin py-space-lg flex flex-col gap-space-lg bg-surface">
+<!-- Introduction Text Block -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-px bg-primary"></div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.2em]">Our Heritage</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface font-light leading-relaxed">
+        UR HOM was conceived with a singular aspiration: to introduce world-class interior architecture to the culturally opulent city of Rajahmundry and coastal Andhra Pradesh.
+      </p>
+<p class="font-body-md text-body-md text-on-surface-variant font-light leading-relaxed">
+        From expansive riverfront estates along the Godavari to bespoke modern duplexes and statement corporate headquarters, our multi-disciplinary studio harmonizes master interior architects, lighting scenographers, and generational artisan craftsmen.
+      </p>
+</div>
+<!-- Quick Stat Highlights -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col p-space-md bg-surface-container rounded-DEFAULT shadow-sm">
+<span class="font-display text-headline-md text-primary font-normal">140+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Sanctuaries Crafted</span>
+<span class="font-body-md text-[12px] text-outline mt-1 font-light">Rajahmundry & AP</span>
+</div>
+<div class="flex flex-col p-space-md bg-surface-container rounded-DEFAULT shadow-sm">
+<span class="font-display text-headline-md text-primary font-normal">10-Yr</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Structural Shield</span>
+<span class="font-body-md text-[12px] text-outline mt-1 font-light">Handcrafted Integrity</span>
+</div>
+<div class="flex flex-col p-space-md bg-surface-container rounded-DEFAULT shadow-sm">
+<span class="font-display text-headline-md text-primary font-normal">100%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Turnkey Precision</span>
+<span class="font-body-md text-[12px] text-outline mt-1 font-light">Zero Subcontracting</span>
+</div>
+<div class="flex flex-col p-space-md bg-surface-container rounded-DEFAULT shadow-sm">
+<span class="font-display text-headline-md text-primary font-normal">28+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Artisan Guilds</span>
+<span class="font-body-md text-[12px] text-outline mt-1 font-light">Teak & Marble Maestros</span>
+</div>
+</div>
+</section>
+<!-- Mission & Vision Dual Bento -->
+<section class="w-full px-margin py-space-md bg-surface-container-lowest">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.2em]">The UR HOM Creed</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-1">Philosophy of Living</h2>
+</div>
+<span class="material-symbols-outlined text-outline text-[26px]">balance</span>
+</div>
+<!-- Mission Card -->
+<div class="relative overflow-hidden p-space-md bg-surface-container rounded-DEFAULT shadow-md flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface uppercase tracking-wider">Our Mission</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant font-light italic leading-relaxed pt-1">
+          â€œTo conceive and deliver elevated living environments that seamlessly harmonize aesthetic majesty, sensory comfort, and functional longevity.â€
+        </p>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-sm text-[11px] text-outline uppercase tracking-wider">Aesthetic Majesty â€¢ Sensory Comfort</span>
+</div>
+</div>
+<!-- Vision Card -->
+<div class="relative overflow-hidden p-space-md bg-surface-container-high rounded-DEFAULT shadow-md flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</div>
+<span class="font-title-md text-title-md text-primary uppercase tracking-wider">Our Vision</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-light italic leading-relaxed pt-1">
+          â€œTo stand as the most trusted premier design and build house in South India, celebrated for bespoke innovation, sustainable materials, and impeccable precision.â€
+        </p>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-[11px] text-outline uppercase tracking-wider">Pinnacle South Indian Atelier</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive 5-Step Architectural Roadmap -->
+<section class="w-full px-margin py-space-lg bg-surface">
+<div class="flex flex-col gap-1 mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">route</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.2em]">Methodology</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">The 5-Stage Orchestration</h2>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">
+        Tap each milestone to preview the precision rigor delivered at every turn.
+      </p>
+</div>
+<!-- Stepper Navigation Pills -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-space-xs no-scrollbar">
+<button class="step-tab px-3 py-2 bg-primary text-on-primary font-label-sm text-[10px] uppercase tracking-wider rounded-DEFAULT whitespace-nowrap shadow-sm transition-all" id="step-tab-0" onclick="switchStep(0)">01. Discovery</button>
+<button class="step-tab px-3 py-2 bg-surface-container text-on-surface-variant font-label-sm text-[10px] uppercase tracking-wider rounded-DEFAULT whitespace-nowrap transition-all" id="step-tab-1" onclick="switchStep(1)">02. 3D & VR</button>
+<button class="step-tab px-3 py-2 bg-surface-container text-on-surface-variant font-label-sm text-[10px] uppercase tracking-wider rounded-DEFAULT whitespace-nowrap transition-all" id="step-tab-2" onclick="switchStep(2)">03. Materials</button>
+<button class="step-tab px-3 py-2 bg-surface-container text-on-surface-variant font-label-sm text-[10px] uppercase tracking-wider rounded-DEFAULT whitespace-nowrap transition-all" id="step-tab-3" onclick="switchStep(3)">04. Turnkey</button>
+<button class="step-tab px-3 py-2 bg-surface-container text-on-surface-variant font-label-sm text-[10px] uppercase tracking-wider rounded-DEFAULT whitespace-nowrap transition-all" id="step-tab-4" onclick="switchStep(4)">05. Handover</button>
+</div>
+<!-- Step Dynamic Detail Card -->
+<div class="mt-space-md relative min-h-[300px]">
+<!-- Step 1 -->
+<div class="step-panel flex flex-col p-space-md bg-surface-container rounded-DEFAULT shadow-md gap-space-sm" id="step-panel-0">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-[10px] text-primary uppercase tracking-[0.2em] bg-surface-container-high px-2 py-0.5 rounded-DEFAULT">Phase 01</span>
+<span class="font-title-md text-title-md text-on-surface">Discovery & Consultation</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[24px]">psychology</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant font-light leading-relaxed">
+          Comprehensive lifestyle analysis, diurnal natural illumination tracking, vastu alignment verification, and millimeter-accurate LiDAR site surveys across Rajahmundry properties.
+        </p>
+<div class="p-space-sm bg-surface-container-low rounded-DEFAULT flex items-center justify-between mt-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">pin_drop</span>
+<span class="font-label-sm text-[11px] text-on-surface">Danavaipeta Studio Assessment</span>
+</div>
+<span class="font-label-sm text-[10px] text-outline">Week 01</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="step-panel hidden flex-col p-space-md bg-surface-container rounded-DEFAULT shadow-md gap-space-sm" id="step-panel-1">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-[10px] text-primary uppercase tracking-[0.2em] bg-surface-container-high px-2 py-0.5 rounded-DEFAULT">Phase 02</span>
+<span class="font-title-md text-title-md text-on-surface">3D Architectural VR</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[24px]">view_in_ar</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant font-light leading-relaxed">
+          Photorealistic ray-traced spatial renderings and immersive Oculus VR walkthroughs that enable you to walk your riverfront sanctuary before construction begins.
+        </p>
+<div class="p-space-sm bg-surface-container-low rounded-DEFAULT flex items-center justify-between mt-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">stream_apps</span>
+<span class="font-label-sm text-[11px] text-on-surface">4K Spatial Simulation</span>
+</div>
+<span class="font-label-sm text-[10px] text-outline">Weeks 02-03</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="step-panel hidden flex-col p-space-md bg-surface-container rounded-DEFAULT shadow-md gap-space-sm" id="step-panel-2">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-[10px] text-primary uppercase tracking-[0.2em] bg-surface-container-high px-2 py-0.5 rounded-DEFAULT">Phase 03</span>
+<span class="font-title-md text-title-md text-on-surface">Material Curation</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[24px]">texture</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant font-light leading-relaxed">
+          Hand-selected bookmatched Italian Carrara marble, seasoned Burma teak, German Hafele architectural hardware, and bespoke artisanal fluted acoustic louvers.
+        </p>
+<div class="p-space-sm bg-surface-container-low rounded-DEFAULT flex items-center justify-between mt-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span class="font-label-sm text-[11px] text-on-surface">Sample Board Presentation</span>
+</div>
+<span class="font-label-sm text-[10px] text-outline">Week 04</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="step-panel hidden flex-col p-space-md bg-surface-container rounded-DEFAULT shadow-md gap-space-sm" id="step-panel-3">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-[10px] text-primary uppercase tracking-[0.2em] bg-surface-container-high px-2 py-0.5 rounded-DEFAULT">Phase 04</span>
+<span class="font-title-md text-title-md text-on-surface">Turnkey Execution</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[24px]">engineering</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant font-light leading-relaxed">
+          Proprietary project managers, daily live video feeds, dust-sealed acoustic framing, and strict milestone auditing keeping your build flawless and on calendar.
+        </p>
+<div class="p-space-sm bg-surface-container-low rounded-DEFAULT flex items-center justify-between mt-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">calendar_today</span>
+<span class="font-label-sm text-[11px] text-on-surface">Weekly Milestone Tracker</span>
+</div>
+<span class="font-label-sm text-[10px] text-outline">Weeks 05-18</span>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="step-panel hidden flex-col p-space-md bg-surface-container rounded-DEFAULT shadow-md gap-space-sm" id="step-panel-4">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-[10px] text-primary uppercase tracking-[0.2em] bg-surface-container-high px-2 py-0.5 rounded-DEFAULT">Phase 05</span>
+<span class="font-title-md text-title-md text-on-surface">Styling & Handover</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[24px]">key</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant font-light leading-relaxed">
+          White-glove deep cleaning, scent curation, art styling, 180-point quality compliance sign-off, and formal presentation of the 10-Year Comprehensive Warranty certificate.
+        </p>
+<div class="p-space-sm bg-surface-container-low rounded-DEFAULT flex items-center justify-between mt-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">workspace_premium</span>
+<span class="font-label-sm text-[11px] text-on-surface">10-Year Written Guarantee</span>
+</div>
+<span class="font-label-sm text-[10px] text-outline">Handover Day</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Values (Elevated Architectural Badges) -->
+<section class="w-full px-margin py-space-lg bg-surface-container-lowest">
+<div class="flex flex-col gap-1 mb-space-md">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.2em]">Pillars of UR HOM</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Our Non-Negotiables</h2>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">
+        Five foundational commitments etched into every blueprint we craft.
+      </p>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Value 1 -->
+<div class="flex items-center gap-space-md p-space-md bg-surface-container rounded-DEFAULT shadow-sm">
+<div class="w-11 h-11 shrink-0 bg-primary/10 flex items-center justify-center text-primary rounded-DEFAULT">
+<span class="material-symbols-outlined text-[22px]">workspace_premium</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-medium">Uncompromising Quality</span>
+<span class="font-body-md text-body-md text-on-surface-variant font-light leading-snug">Zero grade compromises; verified kiln-dried hardwoods and certified marble slabs.</span>
+</div>
+</div>
+<!-- Value 2 -->
+<div class="flex items-center gap-space-md p-space-md bg-surface-container rounded-DEFAULT shadow-sm">
+<div class="w-11 h-11 shrink-0 bg-primary/10 flex items-center justify-center text-primary rounded-DEFAULT">
+<span class="material-symbols-outlined text-[22px]">assured_workload</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-medium">Transparent Integrity</span>
+<span class="font-body-md text-body-md text-on-surface-variant font-light leading-snug">Itemized open-book costing with no veiled markups or undisclosed substitution clauses.</span>
+</div>
+</div>
+<!-- Value 3 -->
+<div class="flex items-center gap-space-md p-space-md bg-surface-container rounded-DEFAULT shadow-sm">
+<div class="w-11 h-11 shrink-0 bg-primary/10 flex items-center justify-center text-primary rounded-DEFAULT">
+<span class="material-symbols-outlined text-[22px]">carpenter</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-medium">Artisanal Craftsmanship</span>
+<span class="font-body-md text-body-md text-on-surface-variant font-light leading-snug">Generational carpenters and stonemasons honoring timeless hand-finishing techniques.</span>
+</div>
+</div>
+<!-- Value 4 -->
+<div class="flex items-center gap-space-md p-space-md bg-surface-container rounded-DEFAULT shadow-sm">
+<div class="w-11 h-11 shrink-0 bg-primary/10 flex items-center justify-center text-primary rounded-DEFAULT">
+<span class="material-symbols-outlined text-[22px]">emoji_people</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-medium">Human-Centric Design</span>
+<span class="font-body-md text-body-md text-on-surface-variant font-light leading-snug">Spaces tailored to daily family rituals, acoustic calm, and holistic sensory wellness.</span>
+</div>
+</div>
+<!-- Value 5 -->
+<div class="flex items-center gap-space-md p-space-md bg-surface-container rounded-DEFAULT shadow-sm">
+<div class="w-11 h-11 shrink-0 bg-primary/10 flex items-center justify-center text-primary rounded-DEFAULT">
+<span class="material-symbols-outlined text-[22px]">schedule</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-medium">Punctual Delivery</span>
+<span class="font-body-md text-body-md text-on-surface-variant font-light leading-snug">Rigorous contractual handover dates backed by institutional project governance.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Team & Leadership Spotlight -->
+<section class="w-full px-margin py-space-lg bg-surface">
+<div class="flex flex-col gap-1 mb-space-md">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.2em]">Leadership Guild</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Architects of Distinction</h2>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">
+        The visionary leadership guiding Andhra Pradesh's most celebrated private residential builds.
+      </p>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Leader 1 -->
+<div class="flex flex-col bg-surface-container rounded-DEFAULT overflow-hidden shadow-md">
+<div class="relative w-full h-56">
+<div class="w-full h-full bg-cover bg-center" data-alt="Editorial portrait of an experienced Indian male principal architect in a minimalist charcoal turtleneck, reviewing architectural blueprints in a luxury dark wood studio office with warm low-key accent lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCT40wdYdwvJqQ7EhYLLst_VnGOgT37JsN8DIbWuTeTVaA_W9I7SirTo7DoUPg3WowwOGqL_WAGCpzFkHlo2kLUOAEutmW4GWeN3cUeYDJWVea63-zkeKzjhM8XfWUTbeq-y8A1VKLPhZVN7GNBcZuP43sg03C1cBqN5RiI0Z3mXaY8yg4qN5Rv6-5foDWoTKiVPh6l6uRsYoKOyPtNSzlExWaYxYlEfAKTqsKZI9AKKYnUJeEe0f5yhg')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-space-md">
+<span class="font-label-sm text-[10px] text-primary uppercase tracking-widest bg-surface-container-lowest/80 px-2.5 py-1 backdrop-blur-sm rounded-DEFAULT">IIID Gold Medalist â€¢ SPA Alum</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-1">
+<div class="flex items-baseline justify-between">
+<h3 class="font-title-lg text-title-lg text-on-surface">Ar. Vikramaditya Varma</h3>
+<span class="font-label-sm text-label-sm text-primary">Founder & Principal</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant font-light mt-1">
+            With 16+ years pioneering biophilic tropical residences, Vikramaditya orchestrates UR HOM's design ethos, blending classical South Indian courtyard concepts with cutting-edge global luxury.
+          </p>
+<div class="flex items-center gap-space-xs pt-space-xs text-outline font-label-sm text-[11px] uppercase tracking-wider">
+<span class="material-symbols-outlined text-[15px] text-primary">award_star</span>
+<span>Architectural Digest India Top 50 Regional Studio</span>
+</div>
+</div>
+</div>
+<!-- Leader 2 -->
+<div class="flex flex-col bg-surface-container rounded-DEFAULT overflow-hidden shadow-md">
+<div class="relative w-full h-56">
+<div class="w-full h-full bg-cover bg-center" data-alt="Editorial portrait of an elegant Indian female head interior architect standing in a sun-drenched Italian marble design atelier, holding material finish swatches with delicate gold jewelry and sophisticated minimal styling." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB-V682UOfpBXk8Kn78e395AFaUNQ63uKCSW7DzkWmV26svPrmWBH0cvsHMwuq-HAyPXHGCnNNl3E4FfZ5CtVQSYlhYNGdTdjMVWcogA1h0IL9xv9XfYTYULH5xnYDAEGQevFcQGS2ZKhCS2Fyxq4PbLNOpJE47kfd6myiqMQ-Fmep3scjQfJp0o2msPzWUQ_smSvIHe0X1sYQCELV3f708GD5EoX3K6fpRXgSTJj2mpy8JzXim6zKJ_Q')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-space-md">
+<span class="font-label-sm text-[10px] text-primary uppercase tracking-widest bg-surface-container-lowest/80 px-2.5 py-1 backdrop-blur-sm rounded-DEFAULT">Domus Milan Fellow â€¢ IGBC AP</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-1">
+<div class="flex items-baseline justify-between">
+<h3 class="font-title-lg text-title-lg text-on-surface">Samyukta K. Reddy</h3>
+<span class="font-label-sm text-label-sm text-primary">Head of Interior Architecture</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant font-light mt-1">
+            Specializing in bespoke tactile surfaces and intelligent circadian lighting design, Samyukta curates the rare stone and timber narratives that define UR HOM's sensory living spaces.
+          </p>
+<div class="flex items-center gap-space-xs pt-space-xs text-outline font-label-sm text-[11px] uppercase tracking-wider">
+<span class="material-symbols-outlined text-[15px] text-primary">spa</span>
+<span>Sustainable Luxury Interior Designer of the Year 2023</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Material Swatch Experience (Tactile Luxury Moment) -->
+<section class="w-full px-margin py-space-lg bg-surface-container-low">
+<div class="flex flex-col gap-1 mb-space-sm">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.2em]">Material Palette</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">The Textures of Distinction</h2>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">
+        Tap a material to examine our certified provenance specifications.
+      </p>
+</div>
+<!-- Swatch Grid -->
+<div class="grid grid-cols-2 gap-space-sm">
+<button class="flex flex-col p-space-sm bg-surface-container rounded-DEFAULT text-left active:scale-[0.98] transition-transform shadow-sm" onclick="inspectSwatch('Calacatta Michelangelo', 'Direct quarry imported from Carrara, Italy. Honed finish with subtle charcoal and warm gold vein structures.')">
+<div class="w-full h-20 bg-surface-bright rounded-DEFAULT overflow-hidden mb-2 relative">
+<div class="w-full h-full bg-cover bg-center" data-alt="Macro luxury photography of high end Italian white Calacatta marble slab with dramatic grey and gold veins under soft architectural lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBp4r9Tajm7TCS1Aq5zwuCC5FCtlgXQItx9Db6Skb4l17wvVzUdeV1I_9QU-kVyQxgCqGEzycWn8oZTgeXr5sSx_Roz9IOnoSymgfK-H_g6JIXECgOgMwuP35necoi9B4FqVMefy3vhZbftaEy52QVpNxHSKcc7GktZohxhN_WjKZsmaTvjUVBjwvj-WWne8rroZLC9dfBjM4EScP8h8CVCyFOSdIhhiVz7odai1Z9wgUDREdzfymza6Q')">
+</div>
+<span class="absolute bottom-1.5 right-1.5 bg-surface-dim/80 px-1.5 py-0.5 font-label-sm text-[9px] text-primary">Italy</span>
+</div>
+<span class="font-title-md text-[14px] text-on-surface font-medium truncate">Italian Calacatta</span>
+<span class="font-label-sm text-[10px] text-outline uppercase tracking-wider">Direct Carrara</span>
+</button>
+<button class="flex flex-col p-space-sm bg-surface-container rounded-DEFAULT text-left active:scale-[0.98] transition-transform shadow-sm" onclick="inspectSwatch('East Godavari Teak', 'Sustainably reclaimed 40-year seasoned heartwood. Moisture stabilized, finished in natural matte plant oils.')">
+<div class="w-full h-20 bg-surface-bright rounded-DEFAULT overflow-hidden mb-2 relative">
+<div class="w-full h-full bg-cover bg-center" data-alt="Close up architectural detail of fluted warm golden teak wood panelling with rich organic wood grain textures." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC4WPquTpvrttTicurjV1WcRmgk2Pu2L0Ay1HwS6GWYKgjLb8Dn1EepAfjRC4QNM8uTBAN_VpA5bVztZDjgwUSnMfFJy8B1yCb5Og5Mj_3CMwfZFk2yGfM0-W4VNZC0mBSX8RW2lyNe5QuZxaIGxUynRw5QpqqachY9LatAvP0u3jiSPJu30yyh8vu-KaGlki8z1JUt27sKv5T7iOEmI4sV7t26pYxORbkLYN4o8grBdGIRsGvLCRdIyg')">
+</div>
+<span class="absolute bottom-1.5 right-1.5 bg-surface-dim/80 px-1.5 py-0.5 font-label-sm text-[9px] text-primary">Local</span>
+</div>
+<span class="font-title-md text-[14px] text-on-surface font-medium truncate">Aged Teak Wood</span>
+<span class="font-label-sm text-[10px] text-outline uppercase tracking-wider">Artisan Seasoned</span>
+</button>
+<button class="flex flex-col p-space-sm bg-surface-container rounded-DEFAULT text-left active:scale-[0.98] transition-transform shadow-sm" onclick="inspectSwatch('Brushed Champagne Brass', 'Hand-patinated solid brass profiles with anti-oxidation nanoscale ceramic clear coat.')">
+<div class="w-full h-20 bg-surface-bright rounded-DEFAULT overflow-hidden mb-2 relative">
+<div class="w-full h-full bg-cover bg-center" data-alt="Architectural macro shot of brushed champagne gold brass metal inlays with fine satin hairline brushed reflections." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDNjBsWe1_m4E8jaur_9MxC_BS4wQxulmuQGDVRqBRHV9g784xmFC36_8EQkeXbDm5rg4fJ6ee1fMlTWIpHoCKvEoo3ZEgIrMDYjsnka9Tj5pln8JEP27kiaSimeICSe_wS3kheBfQ82yPL0auy2_HeY-39o_vTRNFSiTy-DQPj1mTpFVI4dpqvRRtYMC6aTydLfk6pg2joVY00LvQx3jazIaf35frkMnw3d7wS0rtKfLZ6MRXE2ozGsw')">
+</div>
+<span class="absolute bottom-1.5 right-1.5 bg-surface-dim/80 px-1.5 py-0.5 font-label-sm text-[9px] text-primary">Bespoke</span>
+</div>
+<span class="font-title-md text-[14px] text-on-surface font-medium truncate">Champagne Brass</span>
+<span class="font-label-sm text-[10px] text-outline uppercase tracking-wider">Hairline Milled</span>
+</button>
+<button class="flex flex-col p-space-sm bg-surface-container rounded-DEFAULT text-left active:scale-[0.98] transition-transform shadow-sm" onclick="inspectSwatch('Acoustic Fluted Glass', 'Low-iron European extra-clear tempered safety glass featuring ribbed texture for soft ambient light transmission.')">
+<div class="w-full h-20 bg-surface-bright rounded-DEFAULT overflow-hidden mb-2 relative">
+<div class="w-full h-full bg-cover bg-center" data-alt="Textured reeded fluted ribbed glass architectural panel softly diffusing warm interior illumination." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCMv5OiRF8HIm0COYsPp7Te6ImpIcXfxiXmP86HoAicSeOvStF2yaPuvULRbhYKOOtmCzg6b7JO5zZ9Trptk18xE5HZXsjg2_roOzlzR_aZYk89VOCAq4Pp3tMuy4kmdsFKu3smEqoOgh0zRNH3j64sSLq0P-qDi-S3sLWo-LlGstOTOP4rD5PeEsK_bCM7ECxxir56-P5tNLSb83tJUZIXw6ILboi-g8aG4Y1G4UO8T2pU2ivAt_52Tg')">
+</div>
+<span class="absolute bottom-1.5 right-1.5 bg-surface-dim/80 px-1.5 py-0.5 font-label-sm text-[9px] text-primary">Germany</span>
+</div>
+<span class="font-title-md text-[14px] text-on-surface font-medium truncate">Fluted Glass</span>
+<span class="font-label-sm text-[10px] text-outline uppercase tracking-wider">Acoustic Rated</span>
+</button>
+</div>
+<!-- Active Swatch Inspection Toast -->
+<div class="mt-space-md p-space-md bg-surface-container-high rounded-DEFAULT shadow-md flex flex-col gap-1 transition-all duration-300" id="swatch-detail">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-primary" id="swatch-title">Italian Calacatta Michelangelo</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-widest">Selected Spec</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant font-light leading-relaxed" id="swatch-desc">
+        Direct quarry imported from Carrara, Italy. Honed finish with subtle charcoal and warm gold vein structures.
+      </p>
+</div>
+</section>
+<!-- Rajahmundry Atelier Studio Map & Location -->
+<section class="w-full px-margin py-space-lg bg-surface">
+<div class="flex flex-col gap-1 mb-space-md">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.2em]">Private Consultations</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">The Danavaipeta Atelier</h2>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">
+        Visit our sample gallery, tactile library, and 3D VR simulation suite in Rajahmundry.
+      </p>
+</div>
+<div class="relative w-full rounded-DEFAULT overflow-hidden shadow-lg bg-surface-container">
+<div class="w-full h-52 bg-cover bg-center" data-location="Danavaipeta, Rajahmundry, Andhra Pradesh">
+</div>
+<div class="p-space-md flex flex-col gap-space-sm bg-surface-container">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">UR HOM Flagship Studio</span>
+<span class="font-body-md text-[13px] text-on-surface-variant font-light">Riverfront Promenade, Danavaipeta, Rajahmundry</span>
+</div>
+<a aria-label="Open Studio in Google Maps" class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary active:scale-95 transition-transform" href="https://maps.google.com/?q=Danavaipeta+Rajahmundry" target="_blank">
+<span class="material-symbols-outlined text-[20px]">directions</span>
+</a>
+</div>
+<div class="flex items-center gap-space-md pt-space-xs text-outline font-label-sm text-[11px] uppercase tracking-wider">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+<span>Mon â€“ Sat: 10:00 â€“ 19:30</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">car_rental</span>
+<span>Valet Parking</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final Call to Action Box -->
+<section class="w-full px-margin py-space-lg bg-surface-container-lowest">
+<div class="relative overflow-hidden p-space-lg bg-surface-container rounded-DEFAULT shadow-xl flex flex-col items-center text-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-1">
+<span class="material-symbols-outlined text-[24px]">architecture</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.25em]">Begin Your Transformation</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Collaborate With Our Design Team</h2>
+<p class="font-body-md text-body-md text-on-surface-variant font-light leading-relaxed max-w-xs">
+        Reserve an exclusive 1-on-1 vision session with Principal Architect Vikramaditya Varma and our design directorate.
+      </p>
+<div class="flex flex-col w-full gap-space-xs mt-space-sm">
+<a class="w-full h-12 bg-primary text-on-primary flex items-center justify-center font-label-lg text-label-lg uppercase tracking-widest active:bg-primary-fixed-dim transition-all shadow-md" href="contact.html">
+          Schedule Private Atelier Session
+        </a>
+<a class="w-full h-12 bg-surface-container-high text-on-surface flex items-center justify-center font-label-lg text-label-lg uppercase tracking-widest active:bg-surface-bright transition-all" href="https://wa.me/918832400000">
+<span class="material-symbols-outlined text-[18px] mr-2 text-primary">chat</span>
+          WhatsApp Architectural Desk
+        </a>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function switchStep(index) {
+    const panels = document.querySelectorAll('.step-panel');
+    const tabs = document.querySelectorAll('.step-tab');
+    
+    panels.forEach((panel, i) => {
+      if (i === index) {
+        panel.classList.remove('hidden');
+        panel.classList.add('flex');
+      } else {
+        panel.classList.add('hidden');
+        panel.classList.remove('flex');
+      }
+    });
+
+    tabs.forEach((tab, i) => {
+      if (i === index) {
+        tab.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        tab.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+      } else {
+        tab.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+        tab.classList.add('bg-surface-container', 'text-on-surface-variant');
+      }
+    });
+  }
+
+  function inspectSwatch(title, description) {
+    const detailBox = document.getElementById('swatch-detail');
+    const titleEl = document.getElementById('swatch-title');
+    const descEl = document.getElementById('swatch-desc');
+
+    detailBox.style.opacity = '0.5';
+    setTimeout(() => {
+      titleEl.textContent = title;
+      descEl.textContent = description;
+      detailBox.style.opacity = '1';
+    }, 150);
+  }
+</script><footer class="mt-space-xl px-space-md py-space-lg bg-surface-container-low flex flex-col gap-space-md"><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs"><span class="font-display text-headline-sm text-primary uppercase">UR HOM</span><span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Est. Rajahmundry</span></div><p class="font-body-md text-body-md text-on-surface-variant font-light leading-relaxed">Crafting transcendent private residences, riverfront estates, and bespoke commercial spaces across Andhra Pradesh.</p></div><div class="grid grid-cols-1 gap-space-xs pt-space-xs"><div class="flex items-start gap-space-sm"><span class="material-symbols-outlined text-primary text-[20px] mt-0.5">location_on</span><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface">Rajahmundry Atelier</span><span class="font-body-md text-body-md text-on-surface-variant">Danavaipeta, Rajahmundry, Andhra Pradesh â€¢ 533103, India</span></div></div><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-[20px]">call</span><a class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors" href="tel:+918832400000">+91 883 240 0000 / 01</a></div><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-[20px]">mail</span><a class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors" href="mailto:concierge@urhominteriors.com">concierge@urhominteriors.com</a></div></div><div class="flex items-center gap-space-md pt-space-xs"><a aria-label="Instagram" class="w-11 h-11 flex items-center justify-center bg-surface-container text-on-surface hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">photo_camera</span></a><a aria-label="Facebook" class="w-11 h-11 flex items-center justify-center bg-surface-container text-on-surface hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">public</span></a><a aria-label="Pinterest" class="w-11 h-11 flex items-center justify-center bg-surface-container text-on-surface hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">collections_bookmark</span></a></div><div class="flex flex-wrap items-center gap-space-xs pt-space-xs"><span class="px-space-xs py-1 bg-surface-container-high font-label-sm text-[10px] text-primary uppercase tracking-widest">IIID Accredited</span><span class="px-space-xs py-1 bg-surface-container-high font-label-sm text-[10px] text-primary uppercase tracking-widest">IGBC Green Certified</span><span class="px-space-xs py-1 bg-surface-container-high font-label-sm text-[10px] text-primary uppercase tracking-widest">ISO 9001:2015</span></div><div class="pt-space-xs"><p class="font-label-sm text-[10px] text-outline uppercase tracking-widest">Â© 2024 UR HOM Interiors & Exteriors Pvt Ltd. All Rights Reserved.</p></div></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-20 px-space-xs"><a class="flex flex-col items-center justify-center w-14 h-14 text-on-surface-variant transition-colors" data-path="home" href="index.html"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-[10px] tracking-wider uppercase mt-1">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center w-14 h-14 transition-colors text-primary font-semibold" data-path="about" href="about.html"><span class="material-symbols-outlined text-[22px]">corporate_fare</span><span class="font-label-sm text-[10px] tracking-wider uppercase mt-1">About</span></a><a class="flex flex-col items-center justify-center w-14 h-14 text-on-surface-variant transition-colors" data-path="services" href="service.html"><span class="material-symbols-outlined text-[22px]">design_services</span><span class="font-label-sm text-[10px] tracking-wider uppercase mt-1">Services</span></a><a class="flex flex-col items-center justify-center w-14 h-14 text-on-surface-variant transition-colors" data-path="projects" href="project.html"><span class="material-symbols-outlined text-[22px]">apartment</span><span class="font-label-sm text-[10px] tracking-wider uppercase mt-1">Projects</span></a><a class="flex flex-col items-center justify-center w-14 h-14 text-on-surface-variant transition-colors" data-path="contact" href="contact.html"><span class="material-symbols-outlined text-[22px]">call</span><span class="font-label-sm text-[10px] tracking-wider uppercase mt-1">Contact</span></a></div></nav></body></html>
